@@ -1,0 +1,161 @@
+
+admin@B42 MINGW64 /d
+$ git clone ^C
+
+admin@B42 MINGW64 /d
+$ git clone https://github.com/mtai0524/BeginGitHub.git
+Cloning into 'BeginGitHub'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@B42 MINGW64 /d
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@B42 MINGW64 /d
+$ gitstatus
+bash: gitstatus: command not found
+
+admin@B42 MINGW64 /d
+$ git status BeginGitHub.git
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@B42 MINGW64 /d
+$ git status https://github.com/mtai0524/BeginGitHub.git
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@B42 MINGW64 /d
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@B42 MINGW64 /d
+$ git init
+Initialized empty Git repository in D:/.git/
+
+admin@B42 MINGW64 /d
+$ git status
+fatal: unsafe repository ('D:/' is owned by someone else)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory D:/
+
+admin@B42 MINGW64 /d
+$ git clone https://github.com/mtai0524/BeginGitHub.git
+Cloning into 'BeginGitHub'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@B42 MINGW64 /d
+$ git init
+Reinitialized existing Git repository in D:/.git/
+
+admin@B42 MINGW64 /d
+$ cd BeginGitHub
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ ^C
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git add test.txt
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git commit -m'file'
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin@B42.(none)')
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Everything up-to-date
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git config --global user.email "minhnguyen20020524@gmail.com"
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git config --global user.name "minh tai"
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git commit -m 'file'
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+[main 940a196] file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 102.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mtai0524/BeginGitHub.git
+   e92c36c..940a196  main -> main
+
+admin@B42 MINGW64 /d/BeginGitHub (main)
+$
